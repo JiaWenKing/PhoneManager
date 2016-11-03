@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="false" android:drawable="@drawable/shape_in_ok_bgf"> </item>
+    <item android:state_pressed="true" android:drawable="@drawable/shape_in_ok_bgt"></item>
+    <item  android:drawable="@color/bluezhong2"></item>
+        
+</selector>

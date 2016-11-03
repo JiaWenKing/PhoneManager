@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include layout="@layout/head_layout"/>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/bluezhong"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已发现"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_garbagemax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0kb"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/hui" />
+    <ListView 
+	    android:id="@+id/lv_garbage_show"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="9"
+	    >
+	    
+	</ListView>
+	<Button
+	    android:id="@+id/bt_clear1"
+	     android:layout_width="match_parent"
+	     android:layout_margin="5dp"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@drawable/bt_delete"
+	    android:text="disposal"
+	    android:textSize="22sp"
+	    android:textColor="@color/white"
+	    />
+</LinearLayout>

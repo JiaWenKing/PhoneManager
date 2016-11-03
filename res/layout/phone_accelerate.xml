@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 手机加速页面 -->
+
+    <include 
+        layout="@layout/head_layout" />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="vivo"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="安卓5.0"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/progress_layer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="100GB"
+            android:textColor="@color/danlan"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_memory2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="1000MB"
+            android:textColor="@color/hui"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bt_clear"
+        android:text="一键清理"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/huise" >
+    </View>
+
+    <ListView
+        android:id="@+id/lv_app"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/huise" >
+    </View>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bt_user"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_color"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="显示用户进程"
+            android:textColor="@drawable/button_text_color" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/bt_system"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_color"
+            android:button="@null"
+            android:gravity="center"
+            android:text="显示系统进程"
+            android:textColor="@drawable/button_text_color" >
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include layout="@layout/head_layout"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    >
+	    <TextView 
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="文件数量:"
+	        android:textColor="@color/black"
+	        
+	        />
+	    <TextView 
+	        android:id="@+id/tv_show_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0项"
+	        android:textColor="@color/bluezhong"
+	        android:textSize="22sp"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="占用空间:"
+	        android:textColor="@color/black"
+	        android:layout_marginLeft="50dp"
+	        />
+	    <TextView 
+	        android:id="@+id/tv_show_size"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0KB"
+	        android:textColor="@color/bluezhong"
+	        android:textSize="22sp"
+	        />
+	</LinearLayout>
+	<View android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@color/hui"/>
+	<ListView 
+	    android:id="@+id/lv_file_show"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    >
+	    
+	</ListView>
+	<Button
+	    android:id="@+id/bt_delete"
+	     android:layout_width="match_parent"
+	     android:layout_margin="5dp"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@drawable/bt_delete"
+	    android:text="delete"
+	    android:textSize="22sp"
+	    android:textColor="@color/white"
+	    />
+</LinearLayout>

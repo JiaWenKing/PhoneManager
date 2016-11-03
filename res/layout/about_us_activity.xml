@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <include layout="@layout/head_layout"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/androidy"
+        android:gravity="center_horizontal"
+        >
+        <TextView 
+            android:id="@+id/tv_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone_manager"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_above="@+id/tv_version1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            />
+        <TextView 
+            android:id="@+id/tv_version1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            />
+        
+        
+    </RelativeLayout>
+</LinearLayout>

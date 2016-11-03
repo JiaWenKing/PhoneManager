@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+
+    <!-- 进程加速适配器 -->
+
+    <ImageView
+        android:id="@+id/img_app"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="老张"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/app_packname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="com.xxx.xxx"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="5.0"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</LinearLayout>
